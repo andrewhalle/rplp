@@ -8,6 +8,7 @@ setup(
         entry_points={
             "console_scripts":[
                 "rplp = rplp:main",
+                "rplp-get-links = rplp:get_links",
             ],
         }
 )

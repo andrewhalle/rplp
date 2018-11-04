@@ -23,4 +23,3 @@ def get_links():
     links = [x.get('href') for x in soup.find_all('ul')[1].find_all('a')]
     with shelve.open(os.path.join(Path.home(), ".rplp", "links.db")) as shelf:
         shelf["links"] = links
-        shelf.close()
